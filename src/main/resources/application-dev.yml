@@ -1,0 +1,12 @@
+server:
+    context-path: /api
+spring:
+    application:
+        name: generic-crud
+    level:
+        org.springframework.web: DEBUG
+        org.hibernate.SQL: DEBUG
+        org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    liquibase:
+        enabled: false
+        change-log: classpath:db/changelog/db.changelog-master.xml
